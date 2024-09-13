@@ -1,33 +1,43 @@
 {
-    "name": "astro-sanity-starter",
-    "version": "0.0.1",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro build",
-        "preview": "astro preview",
-        "astro": "astro",
-        "create-project": "node ./sanity-export/create-project.js",
-        "import": "node ./sanity-export/import.js",
-        "export": "node ./sanity-export/export.js"
-    },
-    "dependencies": {
-        "@astrojs/tailwind": "^5.1.0",
-        "@sanity/client": "^6.19.1",
-        "@sanity/validation": "^3.14.4",
-        "astro": "^4.9.2",
-        "astro-icon": "^1.1.0",
-        "dotenv": "^16.4.5",
-        "marked": "^12.0.2",
-        "tailwindcss": "^3.4.3",
-        "fs-extra": "^11.2.0"
-    },
-    "devDependencies": {
-        "@sanity/export": "^3.38.1",
-        "@sanity/import": "^3.37.4",
-        "@stackbit/cms-sanity": "^0.2.56",
-        "@stackbit/types": "^2.0.0",
-        "configstore": "5.0.1",
-        "daisyui": "^4.10.2"
-    }
+  "name": "pharmalab",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "sanity-dev": "sanity dev",
+    "sanity-start": "sanity start",
+    "sanity-build": "sanity build",
+    "sanity-deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
+  },
+  "keywords": [
+    "sanity",
+    "nextjs",
+    "react"
+  ],
+  "dependencies": {
+    "@sanity/vision": "^3.57.2",
+    "next": "^13.4.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.57.2",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^4.0.0",
+    "@types/react": "^18.0.25",
+    "eslint": "^8.6.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
 }
